@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Link do css -->
+    
+
+    <main id="container">
+        <img src="transferir.jpg">
+
+        <section id="calculadora">
+            <form id="form">
+                <h1 id="Title">
+                    Calculadora de IMC
+                </h1>
+
+                    <!--Peso-->
+                <div class="input-box">
+                    
+                    <label for="peso">
+                        Peso
+                    </label>
+                    <div class="input-field">
+                        <!--Required serve para obrigar o usuário a preencher o campo-->
+                        <input type="number" id="peso" placeholder="Digite o seu peso" required>
+                        <span>
+                            KG
+                        </span>
+                    </div>
+
+                </div>
+
+                <!--Altura-->
+                <div class="input-box">
+                    
+                    <label for="altura">
+                        Altura
+                    </label>
+                    <div class="input-field">
+                        <!--Required serve para obrigar o usuário a preencher o campo-->
+                        <input type="number" id="altura" placeholder="Digite a sua altura" required>
+                        <span>
+                            M
+                        </span>
+                    </div>
+
+                </div>
+
+                <button id="calcular">
+                    Calcular IMC
+                </button>
+
+            </form>
+            
+            <div id="infos" class="hidden">
+                <div id="resultado">
+                    <div id="imc">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+
+                    <div id="descricao">
+                        <span>55</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
